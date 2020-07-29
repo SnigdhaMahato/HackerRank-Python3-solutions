@@ -1,0 +1,13 @@
+n = int(input())
+if (n%2==0):
+    while (2<=n<=5):
+        print('Not Weird')
+        break
+    while (6<=n<=20):
+        print('Weird')
+        break
+    while (n>20):
+        print('Not Weird')
+        break
+elif (n%2!=0):
+    print('Weird')
