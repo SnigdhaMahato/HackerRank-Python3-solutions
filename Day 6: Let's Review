@@ -1,0 +1,14 @@
+test_cases = int(input())
+
+for i in range(test_cases):
+    string = input()
+    even_chac = ''
+    odd_chac = ''
+
+    for j in range(len(string)):
+        if j%2 == 0:
+            even_chac += string[j]
+        else:
+            odd_chac += string[j]
+
+    print(string[::2],string[1::2])
