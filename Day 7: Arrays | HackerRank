@@ -1,0 +1,6 @@
+n = int(input().strip())
+arr = str(input()).split(" ")
+arr.reverse()
+
+for i in arr:
+    print(i + " ", end="")
