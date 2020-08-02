@@ -1,0 +1,16 @@
+N = int(input())
+phoneBook = {}
+
+for i in range(N):
+    name, number = input().strip()
+    name, number = [str(name), int(number)]
+    phoneBook[name] = number
+
+for _ in range(0, N):
+    name = str(input())
+    if name in phoneBook:
+        number = phoneBook[name]
+        print("{}={}".format(name, phoneBook[name]))
+    else:
+        print("Not found")
+    break
